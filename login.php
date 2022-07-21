@@ -1,3 +1,25 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+  header("location:boxed.html");
+}
+if (isset($_POST['username'])) {
+  include "koneksi.php";
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+  $query="select * from user where username='$username' and password= '$password'";
+  $hasil =mysqli_query($koneksi,$query);
+  if (mysqli_num_row($hasil)) {
+    $detail = mysqli_fetch_array($hasil);
+    $_SESSION['username']=$username;
+    $_SESSION['nama']=$detail['nama'];
+    mysqli_close($koneksi);
+    header("location: boxed.html");
+  }else  {
+    $pesan_erorr = "<p><strong>Login SaLah.</strong>Silaka uLang.</p>";
+  }
+}
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +36,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <style type="text/css">
-    input[type="Username"]::placeholder, input[type="Password"]::placeholder{
+    input[type="username"]::placeholder, input[type="password"]::placeholder{
       color : black;
       font-weight: bolder;
     } 
@@ -35,60 +57,30 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg" style="font-family: Times New Roman" style="font-size: 200%"><b>L<span style="color: red">O</span>GIN</p></b>
 
-      <form action="index3.html" method="post">
+      <form action=" boxed.html" method="post">
         <div class="input-group mb-3">
-          <input type="Username" class="form-control" placeholder="Username" style="text-align: center;
+          <input type="username" class="form-control" placeholder="Username" style="text-align: center;
           background-color: deepskyblue;font-family: joker">
           <div class="input-group-append">
-            <!-- <div class="input-group-text">
-              <span class="fas fa-user"></span>
-            </div> -->
+          
           </div>
         </div>
         <div class="input-group mb-3" >
-          <input type="Password" class="form-control" placeholder="Password"style="text-align: center;
+          <input type="password" class="form-control" placeholder="Password"style="text-align: center;
           background-color: deepskyblue;font-family: joker">
-          <!-- <div class="input-group-append">
-            <div class="input-group-text">
-            </div>
-          </div> -->
+         
         </div>
         <div class="row">
           <div class="col-8">
-            <!-- <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div> -->
+      
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" style="">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
-
-    <!--   <div class="social-auth-links text-center mb-3">
-        <p>- OR -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-        </a>
-      </div> -->
-      <!-- /.social-auth-links -->
-
-      <!-- <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
-      </p>
-      <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
-      </p>
-    </div> -->
-    <!-- /.login-card-body -->
   </div>
 </div>
 <!-- /.login-box -->
