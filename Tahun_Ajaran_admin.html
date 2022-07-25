@@ -3,20 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>By Anak RPL| APK PKBW</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-dahsboard_admin">
+<!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -26,10 +23,13 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="dahsboard_admin.php" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="index3.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="login1.php" class="nav-link">Log Out</a>
       </li>
     </ul>
 
@@ -56,11 +56,21 @@
           </form>
         </div>
       </li>
+
+      <!-- Messages Dropdown Menu -->
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li> -->
     </ul>
   </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
@@ -71,14 +81,14 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
-      <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">ADMIN</a>
         </div>
-      </div> -->
+      </div>
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
@@ -91,7 +101,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.html" class="nav-link">
+                <a href="profile_admin.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>PENGATURAN PROFIL ADMIN</p>
                 </a>
@@ -99,7 +109,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
+              <a href="jurusan_admin.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 JURUSAN
@@ -107,7 +117,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-item menu-open">
+           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-copy"></i>
               <p>
@@ -118,19 +128,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="layout/top-nav.html" class="nav-link">
+                <a href="pilih_jurusan_admin.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>KELAS X</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="layout/top-nav-sidebar.html" class="nav-link">
+                <a href="pilih_jurusan_admin.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>KELAS XI</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="layout/boxed.html" class="nav-link active">
+                <a href="pilih_jurusan_admin.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>KELAS XII</p>
                 </a>
@@ -138,7 +148,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="calendar.html" class="nav-link">
+            <a href="Tahun_Ajaran_admin.html" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 MANAJEMEN TAHUN AJARAN
@@ -146,8 +156,8 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="gallery.html" class="nav-link">
+        <li class="nav-item">
+            <a href="guru_mapel.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 GURU MAPEL
@@ -155,7 +165,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="kanban.html" class="nav-link">
+             <a href="kelas_admin.html" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 KELAS
@@ -165,19 +175,18 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 style="font-family: Times New Roman;width: 100px ">Manajemen Tahun Ajaran</h1>
+          <div class="col-sm-10">
+            <h1 style="font-family: Times New Roman;text-align: center;padding-left: 120px">Manajemen Tahun Ajaran</h1>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-2">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dahsboard_admin.php">Home</a></li>
               <li class="breadcrumb-item active">Lay out</li>
             </ol>
           </div>
@@ -204,7 +213,7 @@
                     <th style="width: 1%" >No</th>
                     <th >Kode</th>
                     <th>Tahun Ajaran</th>
-                    <th style="width: 22%">Action</th>
+                    <th style="width: 30%">Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -212,8 +221,8 @@
                     <td></td>
                     <td></td>
                     <td style="background-color: white; ">
-                      <a href=""><span class="btn btn-primary" style="margin-left: 10 px">Edit</span></a>
-                       <a href=""><span class="btn btn-danger" style="color : white; margin-left: 10 px">Hapus</span></a>
+                      <span class="btn btn-primary" style="color : white; margin-left: 10px"><a href="general.html" style="color: white">Edit</span></a>
+                       <a href=""><span class="btn btn-danger" style="color : white; margin-left: 10px">Hapus</span></a>
                     </td>
                   </tbody>
                   <tfoot>
