@@ -10,7 +10,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url('asset/plugins/fontawesome-free/css/all.min.css');?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('asset/dist/css/adminlte.min.css');?>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
   <style type="text/css">
     aside{
   font-family:"Times New Roman";
@@ -292,7 +292,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url('asset/dist/js/demo.js');?>"></script>
 <script src="<?php echo base_url('asset/dist/js/demo.js');?>"></script>
-<!-- Page specific script -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
 $(function () {
   bsCustomFileInput.init();
