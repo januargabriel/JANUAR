@@ -2,14 +2,14 @@
    $id  =$as->Id_guru;
 
 if($this->input->post('is_submitted')){
-  $kode  =set_value('kode');
+  $kode_guru  =set_value('kode_guru');
   $nama_guru       =set_value('nama_guru');
   $username  =set_value('username');
   $nama_mapel =set_value('nama_mapel');
   $password   =set_value('password');
 
 } else {
-  $kode  =$as->kode;
+  $kode_guru  = $as->kode_guru;
   $nama_guru      =$as->nama_guru;
   $username  =$as->username;
   $nama_mapel =$as->nama_mapel;
@@ -26,9 +26,9 @@ if($this->input->post('is_submitted')){
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url('asset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url('asset/plugins/fontawesome-free/css/all.min.css');?>">
+  <link rel="stylesheet" href="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('asset/dist/css/adminlte.min.css');?>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">s
   <style type="text/css">
     aside{
   font-family:"Times New Roman";
@@ -234,13 +234,13 @@ if($this->input->post('is_submitted')){
               <div class="card-header">
                 <h3 class="card-title">Horizontal Form</h3>
               </div>
-              <form class="form-horizontal" method="post" action="<?php echo base_url() . "index.php/Admin/edit_guru/" .$id;?>" enctype="multipart/form-data">
+              <form class="form-horizontal" method="post" action="<?php echo base_url() . "index.php/admin/edit_guru/" .$id;?>" enctype="multipart/form-data">
                 <div class="card-body row">
                 <div class="satu col-sm-12">
                   <div class="form-group row">
                     <label for="Kode" class="col-sm-4 col-form-label">Kode Guru</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" name="kode" disabled="disable" value="<?php echo $kode?>" style="color:red;font-family: Times New Roman">
+                      <input type="text" class="form-control" name="kode_guru" disabled="disable" value="<?php echo $kodeguru?>" style="color:red;font-family: Times New Roman">
                     </div>
                   </div>  
                   <div class="form-group row";>
@@ -315,12 +315,12 @@ if($this->input->post('is_submitted')){
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?php echo base_url('asset/plugins/jquery/jquery.min.js');?>"></script>
+<script src="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?php echo base_url('asset/plugins/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
+<script src="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script>
-<!-- Page specific script -->
+<!-- <script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
 $(function () {
   bsCustomFileInput.init();
