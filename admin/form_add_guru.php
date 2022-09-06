@@ -216,8 +216,8 @@
                   <div class="form-group row" >
                     <label for="input" class="col-sm-4 col-form-label">Kode Guru</label>
                     <div class="col-sm-8">
-                      <input type="text" name="kode" value="<?php echo $kodeguru ?>" style="color:red;font-weight: bolder;" class="form-control" required='required' disabled="disable">
-                      <input type="hidden" name="kode" value="<?php echo $kodeguru ?>">
+                      <input type="text" name="kode_guru" value="<?php echo $kodeguru ?>" style="color:red;font-weight: bolder;" class="form-control" required='required' disabled="disable">
+                      <input type="hidden" name="kode_guru" value="<?php echo $kodeguru ?>">
                     </div>
                   </div> 
                   <div class="form-group row">

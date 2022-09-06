@@ -220,8 +220,8 @@
                   <div class="form-group row">
                     <label for="input" class="col-sm-4 col-form-label">Kode Piket</label>
                     <div class="col-sm-8">
-                      <input type="text" name="kode" value="<?php echo $kodepiket ?>" style="color:red" class="form-control" required='required' disabled="disable">
-                      <input type="hidden" name="kode" value="<?php echo $kodepiket ?>">
+                      <input type="text" name="kode_piket" value="<?php echo $kodepiket ?>" style="color:red" class="form-control" required='required' disabled="disable">
+                      <input type="hidden" name="kode_piket" value="<?php echo $kodepiket ?>">
                     </div>
                   </div> 
                   <div class="form-group row";>
