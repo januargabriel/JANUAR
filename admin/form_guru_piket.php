@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css');?>">
   <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css');?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('asset/dist/css/adminlte.min.css');?>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -295,7 +295,7 @@
 <script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.colVis.min.js');?>"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script>
-<!-- Page specific script -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
   $(function () {
     $("#example1").DataTable({
