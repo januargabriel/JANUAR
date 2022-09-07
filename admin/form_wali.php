@@ -8,13 +8,13 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url('asset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css'?>">
-  <link rel="stylesheet" href="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css'?>">
-  <link rel="stylesheet" href="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css'?>">
+  <link rel="stylesheet" href="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
   <!-- Theme style -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css');?>">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?php echo base_url('asset/dist/css/adminlte.min.css');?>">
   <style type="text/css">
     aside{
   font-family:"Times New Roman";
@@ -238,7 +238,7 @@
                    ?>
                     <tr style="text-align: center;">
                     <td><?php echo $no++ ; ?></td>
-                    <td><?php echo $row->kode ; ?></td>
+                    <td><?php echo $row->kode_wali ; ?></td>
                     <td><?php echo $row->nama_wali ; ?></td>
                     <td><?php echo $row->nama_jurusan ; ?></td>
                     <td><?php echo $row->id_user ; ?></td>
@@ -276,25 +276,25 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
+<script src="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
+<script src="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- DataTables  & Plugins -->
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables/jquery.dataTables.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-responsive/js/dataTables.responsive.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/dataTables.buttons.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/jszip/jszip.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/pdfmake/pdfmake.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/pdfmake/vfs_fonts.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.html5.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.print.min.js'?>"></script>
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.colVis.min.js'?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables/jquery.dataTables.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-responsive/js/dataTables.responsive.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-responsive/js/responsive.bootstrap4.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/dataTables.buttons.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.bootstrap4.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/jszip/jszip.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/pdfmake/pdfmake.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/pdfmake/vfs_fonts.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.html5.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.print.min.js');?>"></script>
+<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.colVis.min.js');?>"></script>
 <!-- AdminLTE App -->
-<script src="<?='http://file.smkbatikpwrj.sch.id/assets/dist/js/adminlte.min.js'?>"></script>
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script>
+<!-- Page specific script -->
 <script>
   $(function () {
     $("#example1").DataTable({
