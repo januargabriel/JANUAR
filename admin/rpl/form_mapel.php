@@ -297,7 +297,7 @@
 <script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.print.min.js'?>"></script>
 <script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.colVis.min.js'?>"></script>
 <!-- AdminLTE App -->
-<script src="<?='https://file.smkbatikpwrj.sch.id/assetst/dist/js/adminlte.min.js');?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assetst/dist/js/adminlte.min.js'?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
   $(function () {
