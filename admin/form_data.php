@@ -8,7 +8,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url('asset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');?>">
   <!-- Font Awesome -->
-   <link rel="stylesheet" href="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
+   <link rel="stylesheet" href="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
   <!-- DataTables -->
   <!-- <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css');?>">
   <link rel="stylesheet" href="<?php echo base_url('asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css');?>">
@@ -210,7 +210,7 @@
     <section class="content">
       <div class="container-fluid">
 
-            <div class="card" style="background-color: LightSteelBlue">
+            <div class="card" style="background-color: LightSeaGreen">
               <!-- /.card-header -->
               <div class="card-body">
                 <table border="1">

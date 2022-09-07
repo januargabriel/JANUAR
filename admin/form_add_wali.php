@@ -8,7 +8,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url('asset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
+  <link rel="stylesheet" href="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/fontawesome-free/css/all.min.css'?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
   <style type="text/css">
@@ -289,9 +289,9 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
+<script src="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?= 'http://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
+<script src="<?= 'https://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- AdminLTE App -->
 <!-- <script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
