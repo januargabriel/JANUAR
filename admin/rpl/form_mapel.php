@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Anak RPL| Manajemen Mapel</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url('asset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');?>">
@@ -15,11 +15,16 @@
   <link rel="stylesheet" href="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css'?>">
   <!-- Theme style -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <style type="text/css">
+    aside{
+  font-family:"Times New Roman";
+}
+  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: LightSteelBlue">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: ">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -39,7 +44,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
           <i class="fas fa-search"></i>
         </a>
@@ -58,7 +63,7 @@
             </div>
           </form>
         </div>
-      </li>
+      </li> -->
     </ul>
   </nav>
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: ">
@@ -184,64 +189,63 @@
           <!-- /.sidebar -->
         </aside>
   <div class="content-wrapper" style="background-color: LightSteelBlue">
+    <!-- Content Header (Page header) -->
     <section class="content-header">
-      <div class="container-fluid" style="background-color:">
+      <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 style="font-family: Times New Roman;text-align: center; padding-left: 120px">Tampilan Data</h1>
+            <h1 style="font-family: Times New Roman;text-align: center; color: black; padding-left: 1px">Manajemen Mapel</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="dashboard_admin.php">Home</a></li>
-              <li class="breadcrumb-item active"><a href="login1.php"> Log Out</a></li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active"><a href="#">Layout</a></li>
             </ol>
           </div>
         </div>
-      </div>
+      </div><!-- /.container-fluid -->
     </section>
-    <section class="content" >
+
+    <!-- Main content -->
+    <section class="content">
       <div class="container-fluid">
-            <div class="card" style="background-color: LightBlue">
-              <div class="card-header">
+
+            <div class="card" style="background-color: powderblue">
+              <div class="card-header" style="background-color: SkyBlue">
+                <a href="<?php echo site_url('Admin/add_mapel');?>"><span class="btn btn-primary">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah</span></a>
+                <a href="<?php echo site_url('Admin/add_mapel');?>"><span class="btn btn-secondary">
+                <i class="fa fa-file" aria-hidden="true"></i></span></a>
+
               </div>
-              <div class="card-body" style="background-color: Garamond">
-                <table id="example1" class="table table-bordered table-striped" style="background-color: DarkTurquoise">
-                  <thead style="text-align: center;">
-                  <tr style="text-align: center;">
-                    <th>No</th>
-                    <th >Hari</th>
-                    <th >Tanggal</th>
-                    <th>Jam Pel</th>
-                    <th>Mapel</th>
-                    <th>Guru Mengajar</th>
-                    <th>Guru Pengganti</th>
-                    <th>Hadir</th>
-                    <th>Absen</th>
-                    <th>Jumlah</th>
-                    <th>Uraian pelajaran</th>
+              <!-- /.card-header -->
+              <div class="card-body" style="background-color: LightBlue">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead style="text-align: center;background-color:  blue;color: white; font-family:Garamond">
+                  <tr>
+                    <th style="width: 1%" >No</th>
+                    <th>Kode</th>
+                    <th>Nama Mapel</th>
+                    <th style="width: 22%">Action</th>
                   </tr>
                   </thead>
-                  <tbody>
-                   <?php
+                  <tbody style="font-family:Garamond;background-color: DarkTurquoise;color: black;font-weight: bold;">
+                    <?php
                     $no=1;
-                    $sql="SELECT * FROM data";
+                    $sql="SELECT * FROM mapel";
                     $dts=$this->db->query($sql);
                     foreach ($dts->result() as $row) { 
                      ?>
-                    <tr>
-                    <td><?php echo $c=$c+1 ; ?></td>
-                    <td><?php echo $row->hari ; ?></td>
-                    <td><?php echo $row->tanggal ; ?></td>
-                    <td><?php echo $row->jam_pel ; ?></td>
-                    <td><?php echo $row->mapel ; ?></td>
-                    <td><?php echo $row->nama_guru ; ?></td>
-                    <td><?php echo $row->guru_piket ; ?></td>
-                    <td><?php echo $row->hadir ; ?></td>
-                    <td><?php echo $row->absen ; ?></td>
-                    <td><?php echo $row->jumlah; ?></td>
-                    <td><?php echo $row->uraian; ?></td>
-                    </tr>
-                  <?php } ?>
+                    <tr style="text-align: center;">
+                    <td><?php  echo $no++; ?></td>
+                    <td><?php  echo $row->kode;?></td>
+                    <td><?php  echo $row->nama_mapel;?></td>
+                    <td style="background-color:DarkTurquoise; ">
+                      <a href="<?php echo base_url() ?>index.php/Admin/edit_mpl/<?php echo $row->Id_mapel ?>"><span class="btn btn-primary" style="margin-left: 10px">&nbsp;Edit</span></a>
+                       <a href="<?php echo base_url() ?>index.php/Admin/delete_mpl/<?php echo $row->Id_mapel?>"><span class="btn btn-danger" style="color : powderblue; margin-left: 10 px">Hapus</span></a>
+                    </td>
+                  </tr>
+                <?php }?>
                   </tbody>
                   <tfoot>
                   </tfoot>
@@ -251,7 +255,14 @@
             </div>
            
           </div>
-    </section>  
+          
+        
+      
+      
+   
+    </section>
+   
+  
   </div>
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
@@ -286,7 +297,7 @@
 <script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.print.min.js'?>"></script>
 <script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.colVis.min.js'?>"></script>
 <!-- AdminLTE App -->
-<script src="<?='https://file.smkbatikpwrj.sch.id/assets/dist/js/adminlte.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assetst/dist/js/adminlte.min.js');?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
   $(function () {
