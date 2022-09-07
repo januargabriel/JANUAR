@@ -266,7 +266,7 @@
    
   
   </div>
-  <footer class="main-footer">
+   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 0.0.1
     </div>
@@ -282,24 +282,24 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?php echo base_url('asset/plugins/jquery/jquery.min.js');?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/jquery/jquery.min.js'?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?php echo base_url('asset/plugins/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
 <!-- DataTables  & Plugins -->
-<script src="<?php echo base_url('asset/plugins/datatables/jquery.dataTables.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-responsive/js/dataTables.responsive.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-responsive/js/responsive.bootstrap4.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/dataTables.buttons.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.bootstrap4.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/jszip/jszip.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/pdfmake/pdfmake.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/pdfmake/vfs_fonts.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.html5.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.print.min.js');?>"></script>
-<script src="<?php echo base_url('asset/plugins/datatables-buttons/js/buttons.colVis.min.js');?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables/jquery.dataTables.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-responsive/js/dataTables.responsive.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/dataTables.buttons.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/jszip/jszip.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/pdfmake/pdfmake.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/pdfmake/vfs_fonts.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.html5.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.print.min.js'?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assets/plugins/datatables-buttons/js/buttons.colVis.min.js'?>"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url('asset/dist/js/adminlte.min.js');?>"></script>
+<script src="<?='https://file.smkbatikpwrj.sch.id/assetst/dist/js/adminlte.min.js'?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <script>
   $(function () {
